@@ -54,7 +54,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Get Location"/>
                                 <connections>
-                                    <action selector="getLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXY-T3-Zpy"/>
+                                    <action selector="getLocation" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0W-Op-Mu6"/>
                                 </connections>
                             </button>
                         </subviews>
