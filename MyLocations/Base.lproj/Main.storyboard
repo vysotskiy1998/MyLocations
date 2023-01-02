@@ -102,7 +102,7 @@
                         <outlet property="addressLabel" destination="xCA-fs-1mL" id="St5-RD-vjL"/>
                         <outlet property="getButton" destination="FKA-2V-tpB" id="zTy-8N-duR"/>
                         <outlet property="latitudeLabel" destination="o5p-dg-ekl" id="zTS-ee-fXF"/>
-                        <outlet property="longtitude" destination="tlB-Uh-tp9" id="R2T-PU-SXz"/>
+                        <outlet property="longtitudeLabel" destination="tlB-Uh-tp9" id="toK-Yx-OsS"/>
                         <outlet property="messageLabel" destination="kvz-Pl-2cU" id="9OR-Qu-lHO"/>
                         <outlet property="tagButton" destination="1hH-DI-Ly9" id="N53-7e-aog"/>
                     </connections>
