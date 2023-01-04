@@ -40,8 +40,23 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             showLocationServicesDeniedAlert()
             return
         }
-        startLocationManager()
+        
+        if updatingLocation {
+            stopLocationManager()
+        } else {
+            location = nil
+            lastLocationError = nil
+            startLocationManager()
+        }
         updateLabels()
+    }
+    
+    func configureGetButton() {
+        if updatingLocation {
+            getButton.setTitle("Stop", for: .normal)
+        } else {
+            getButton.setTitle("Get Location", for: .normal)
+        }
     }
     
     // MARK: CLLocationManagerDelegate
@@ -117,6 +132,7 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
             }
             messageLabel.text = statusMessage
         }
+        configureGetButton()
     }
 
     func stopLocationManager() {
