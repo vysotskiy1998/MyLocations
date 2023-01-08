@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CE7F04BC296AAAF90052DC21 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F04BB296AAAF90052DC21 /* LocationDetailsViewController.swift */; };
+		CE7F04BE296B44070052DC21 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F04BD296B44070052DC21 /* CategoryPickerViewController.swift */; };
 		CEE46C992956064A0037D7D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE46C982956064A0037D7D1 /* AppDelegate.swift */; };
 		CEE46C9B2956064A0037D7D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE46C9A2956064A0037D7D1 /* SceneDelegate.swift */; };
 		CEE46C9D2956064A0037D7D1 /* CurrentLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE46C9C2956064A0037D7D1 /* CurrentLocationViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		CE7F04BB296AAAF90052DC21 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
+		CE7F04BD296B44070052DC21 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		CEE46C952956064A0037D7D1 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE46C982956064A0037D7D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE46C9A2956064A0037D7D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				CEE46C982956064A0037D7D1 /* AppDelegate.swift */,
 				CEE46C9A2956064A0037D7D1 /* SceneDelegate.swift */,
+				CE7F04BD296B44070052DC21 /* CategoryPickerViewController.swift */,
 				CEE46C9C2956064A0037D7D1 /* CurrentLocationViewController.swift */,
 				CE7F04BB296AAAF90052DC21 /* LocationDetailsViewController.swift */,
 				CEE46C9E2956064A0037D7D1 /* Main.storyboard */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7F04BE296B44070052DC21 /* CategoryPickerViewController.swift in Sources */,
 				CE7F04BC296AAAF90052DC21 /* LocationDetailsViewController.swift in Sources */,
 				CEE46C9D2956064A0037D7D1 /* CurrentLocationViewController.swift in Sources */,
 				CEE46C992956064A0037D7D1 /* AppDelegate.swift in Sources */,
