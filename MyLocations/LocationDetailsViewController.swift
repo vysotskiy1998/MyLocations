@@ -10,7 +10,12 @@ import UIKit
 class LocationDetailsViewController: UITableViewController {
     
     
-    
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var categoryLabel: UIView!
+    @IBOutlet weak var latitudeLabel: UITableViewCell!
+    @IBOutlet weak var longtitudeLabel: UITableViewCell!
+    @IBOutlet weak var addressLabel: UITableViewCell!
+    @IBOutlet weak var dateLabel: UITableViewCell!
     
     
     @IBAction func Done(_ sender: Any) {
