@@ -31,6 +31,7 @@ class CategoryPickerViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        cell.selectionStyle = .none
         
         let categoryName = categories[indexPath.row]
         cell.textLabel!.text = categoryName
