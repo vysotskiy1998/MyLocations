@@ -315,7 +315,7 @@
                     <navigationItem key="navigationItem" title="Tag Location" id="r1x-uw-bkw">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="DoO-pc-ATi">
                             <connections>
-                                <action selector="Cancel:" destination="4te-Gk-NYl" id="EyS-C4-isZ"/>
+                                <action selector="cancel:" destination="k6r-jH-knd" id="aoH-5d-HL9"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="NsP-Uk-0l4">
@@ -334,6 +334,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Oa-DU-wAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="k6r-jH-knd" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2936" y="3"/>
         </scene>
