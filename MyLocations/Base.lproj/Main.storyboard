@@ -363,6 +363,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="uyt-vY-zQa" kind="unwind" unwindAction="categoryPickerDidPickCategory:" id="pyX-OI-zrY"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -373,6 +376,7 @@
                     <navigationItem key="navigationItem" title="Choose Category" id="8gn-H2-XsA"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="haP-sb-yNu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="uyt-vY-zQa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3684" y="-21"/>
         </scene>

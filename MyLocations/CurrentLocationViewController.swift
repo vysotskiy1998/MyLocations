@@ -46,7 +46,6 @@ class CurrentLocationViewController: UIViewController, CLLocationManagerDelegate
         navigationController?.isNavigationBarHidden = false
     }
     
-    
     @IBAction func getLocation() {
         let authStatus = locationManager.authorizationStatus
         if authStatus == .notDetermined {

@@ -27,8 +27,15 @@ class LocationDetailsViewController: UITableViewController {
     @IBAction func Done(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
+    
     @IBAction func Cancel(_ sender: Any) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func categoryPickerDidPickCategory(_ segue: UIStoryboardSegue) {
+        let controller = segue.source as! CategoryPickerViewController
+        categoryName = controller.selectedCategoryName
+        categoryLabel.text = categoryName
     }
     
     override func viewDidLoad() {
@@ -81,7 +88,7 @@ class LocationDetailsViewController: UITableViewController {
     func format(date: Date) -> String{
         return dateFormatter.string(from: date)
     }
-    
+    //MARK: Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "PickCategory" {
             let controller = segue.destination as! CategoryPickerViewController
