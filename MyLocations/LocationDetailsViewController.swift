@@ -23,21 +23,6 @@ class LocationDetailsViewController: UITableViewController {
     
     var categoryName = "No Category"
     
-    
-    @IBAction func Done(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func Cancel(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    @IBAction func categoryPickerDidPickCategory(_ segue: UIStoryboardSegue) {
-        let controller = segue.source as! CategoryPickerViewController
-        categoryName = controller.selectedCategoryName
-        categoryLabel.text = categoryName
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,8 +37,26 @@ class LocationDetailsViewController: UITableViewController {
         } else {
             addressLabel.text = "No Address Found"
         }
-        
         dateLabel.text = format(date: Date())
+        
+        //Hide Keyboard
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        gestureRecognizer.cancelsTouchesInView = false
+        tableView.addGestureRecognizer(gestureRecognizer)
+    }
+    
+    @IBAction func Done(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func Cancel(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
+    @IBAction func categoryPickerDidPickCategory(_ segue: UIStoryboardSegue) {
+        let controller = segue.source as! CategoryPickerViewController
+        categoryName = controller.selectedCategoryName
+        categoryLabel.text = categoryName
     }
     
     //MARK: Table View Delegates
@@ -108,6 +111,17 @@ class LocationDetailsViewController: UITableViewController {
         if segue.identifier == "PickCategory" {
             let controller = segue.destination as! CategoryPickerViewController
             controller.selectedCategoryName = categoryName
+        }
+    }
+    
+    @objc func hideKeyboard(_ gestureRecognizer: UIGestureRecognizer) {
+        let point = gestureRecognizer.location(in: tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+        
+        if let indexPath = indexPath, indexPath.section != 0, indexPath.row != 0 {
+            descriptionTextView.resignFirstResponder()
+        } else {
+            descriptionTextView.resignFirstResponder()
         }
     }
 }
