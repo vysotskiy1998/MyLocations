@@ -118,10 +118,9 @@ class LocationDetailsViewController: UITableViewController {
         let point = gestureRecognizer.location(in: tableView)
         let indexPath = tableView.indexPathForRow(at: point)
         
-        if let indexPath = indexPath, indexPath.section != 0, indexPath.row != 0 {
-            descriptionTextView.resignFirstResponder()
-        } else {
-            descriptionTextView.resignFirstResponder()
+        if let indexPath = indexPath, indexPath.section == 0, indexPath.row == 0 {
+            return
         }
+        descriptionTextView.resignFirstResponder()
     }
 }
