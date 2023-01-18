@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE0BA45D29781CFF00BE6497 /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0BA45C29781CFF00BE6497 /* HudView.swift */; };
 		CE7F04BC296AAAF90052DC21 /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F04BB296AAAF90052DC21 /* LocationDetailsViewController.swift */; };
 		CE7F04BE296B44070052DC21 /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7F04BD296B44070052DC21 /* CategoryPickerViewController.swift */; };
 		CEE46C992956064A0037D7D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE46C982956064A0037D7D1 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE0BA45C29781CFF00BE6497 /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
 		CE7F04BB296AAAF90052DC21 /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		CE7F04BD296B44070052DC21 /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
 		CEE46C952956064A0037D7D1 /* MyLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 				CE7F04BD296B44070052DC21 /* CategoryPickerViewController.swift */,
 				CEE46C9C2956064A0037D7D1 /* CurrentLocationViewController.swift */,
 				CE7F04BB296AAAF90052DC21 /* LocationDetailsViewController.swift */,
+				CE0BA45C29781CFF00BE6497 /* HudView.swift */,
 				CEE46C9E2956064A0037D7D1 /* Main.storyboard */,
 				CEE46CA42956064C0037D7D1 /* Assets.xcassets */,
 				CEE46CA62956064C0037D7D1 /* LaunchScreen.storyboard */,
@@ -152,6 +155,7 @@
 				CEE46C9D2956064A0037D7D1 /* CurrentLocationViewController.swift in Sources */,
 				CEE46C992956064A0037D7D1 /* AppDelegate.swift in Sources */,
 				CEE46CA32956064A0037D7D1 /* MyLocations.xcdatamodeld in Sources */,
+				CE0BA45D29781CFF00BE6497 /* HudView.swift in Sources */,
 				CEE46C9B2956064A0037D7D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
