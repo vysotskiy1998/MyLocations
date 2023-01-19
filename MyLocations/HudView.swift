@@ -45,7 +45,10 @@ class HudView: UIView {
         let textPoint = CGPoint(x: center.x - round(textSize.width / 2), y: center.y - round(textSize.height / 2) + boxHeight / 4)
         
         text.draw(at: textPoint, withAttributes: attribs)
-        
+    }
+    
+    //MARK: Helper Methods
+    func show(animated: Bool) {
         
     }
 }
