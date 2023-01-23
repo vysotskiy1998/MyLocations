@@ -10,7 +10,7 @@ import UIKit
 class HudView: UIView {
     var text = ""
     
-    class func hud(inView view: UIView, animation: Bool) -> HudView {
+    class func hud(inView view: UIView, animated: Bool) -> HudView {
         let hudView = HudView(frame: view.bounds)
         
         hudView.isOpaque = false
@@ -18,6 +18,7 @@ class HudView: UIView {
         view.addSubview(hudView)
         view.isUserInteractionEnabled = false
         
+        hudView.show(animated: animated)
         return hudView
     }
     
@@ -49,6 +50,15 @@ class HudView: UIView {
     
     //MARK: Helper Methods
     func show(animated: Bool) {
-        
+        if animated {
+            
+            alpha = 0
+            transform = CGAffineTransform(scaleX: 1.3, y: 1.3)
+            
+            UIView.animate(withDuration: 0.3) {
+                 self.alpha = 1
+                 self.transform = CGAffineTransform.identity
+               }
+        }
     }
 }
