@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreLocation
+import CoreData
 
 class LocationDetailsViewController: UITableViewController {
     
@@ -22,6 +23,8 @@ class LocationDetailsViewController: UITableViewController {
     var placemark: CLPlacemark?
     
     var categoryName = "No Category"
+    
+    var manageObjectContext: NSManagedObjectContext!
     
     override func viewDidLoad() {
         super.viewDidLoad()
